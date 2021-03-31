@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!-- es un layout especial porque no sirve el nombre de action patch y class -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--Hacemos la referencia a ese bloque y cambiamos el bloque , cambiamos el template-->
+        <referenceBlock name="checkout.cart.item.renderers.configurable"
+                        template="TrainingEssentialsUnit6_ConfigurableLineItem::cart/item/default.phtml" >
+
+        <!-- se esta creando un view model-->
+	     <arguments>
+	          <argument name="view_model" xsi:type="object">\TrainingEssentialsUnit6\ConfigurableLineItem\ViewModel\ViewModel</argument>
+	     </arguments>
+	</referenceBlock>
+    </body>
+</page>
