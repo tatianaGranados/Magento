@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+
+        <!-- Agrega una nueva pestaña de configuracion ej: en store-> hay general, catalog, customer eso-->
+        <tab id="unit5tab" translate="label" sortOrder="0">
+            <label>Unit 5 Tab </label>
+        </tab>
+
+        <!-- Tambien tenemos que agregar una secccion y en que scopes se muestra-->
+        <section id="unit5section" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Unit 5 Section</label>
+            <!--toda seccion esta asociado a una pestaña -->
+            <tab>unit5tab</tab>
+            <!-- ademas es configurar sus resourse-->
+            <resource>Unit5_AdminController::admincontroller</resource>
+            <!-- y tambien un grupo, y en donde sera visible -->
+            <group id="unit5group" translate="label" type="text" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <!-- Ponemos las secciones que queremos para esto seria test y file_upload-->
+               <field id="test" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                   <label>Yes No</label>
+               </field>
+            </group>
+        </section>
+
+    </system>
+</config>

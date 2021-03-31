@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Tati_MiPrimerModulo"/>
+     <!-- <module name="Tati_MiPrimerModulo" setup_version="1.0.0"/>   en la 2.3 se ponia ver asi-->
+</config>

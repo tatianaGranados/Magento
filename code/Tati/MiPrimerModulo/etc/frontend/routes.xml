@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="miPrimeModulo" frontName="modulop">
+            <module name="Tati_MiPrimerModulo" />
+        </route>
+    </router>
+</config>
+<!-- id:cualquier nombre unico  frontName: nombre ruta  name: nombre del modulo que estamos usando -->
