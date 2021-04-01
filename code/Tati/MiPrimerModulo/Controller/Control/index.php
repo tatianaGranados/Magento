@@ -13,8 +13,9 @@ class index extends Action
     public function execute()
     {
         //echo "hello";
-        $parametro = $this->getRequest()->getParams();
+        $parametro = $this->getRequest()->getParams();$parametro = $this->getRequest()->getParams();
         //print_r($parametro);
+
 
         $parametro1 = $this->getRequest()->getParam("parametro1");
         $parametro2 =  $this->getRequest()->getParam("parametro2");
