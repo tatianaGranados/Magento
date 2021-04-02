@@ -13,9 +13,10 @@ ej:  public function __construct(Context $context, JsonFactory $jsonResult)
          {
              parent::__construct($context);
          }
-puede ser:
+puede ser: todos de frameworl
 - JsonFactory
 - RawFactory
+-RedirectFactory
 
 
 3° inicializamos sus dependencia del json (click alt + enter)
