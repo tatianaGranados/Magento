@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="vmdemo" template ="Unit3_ViewModelDemo::vmdemo.phtml" >
+                <arguments>
+                    <argument name="my_vm" xsi:type="object">Unit3\ViewModelDemo\ViewModel\VMDemo</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

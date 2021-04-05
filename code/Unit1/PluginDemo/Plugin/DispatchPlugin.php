@@ -19,8 +19,11 @@ class DispatchPlugin
     }
 
     public function afterDispatch(\Magento\Framework\App\Action\Action $subject, $result){
+
+        $fullActionName = $subject->getRequest()->getFullActionName();
         $this->logger->alert('test log');
-        var_dump(__METHOD__);die;
+        //no dejamos que complete el proceso y no se genere el cache
+        //var_dump(__METHOD__);die;
         return $result;
     }
 

@@ -1,0 +1,10 @@
+<?php
+/** @var \Unit3\ViewModelDemo\ViewModel\VMDemo $vmw */
+/**  @var  \Magento\Framework\View\Element\Template $block  */
+$vmw = $block->getData('my_vm');  //$vmw = $block->getMyVm();
+?>
+
+
+<pre> <?= __FILE__?> </pre>
+<h1><?= $vm->sayHello() ?></h1>
+

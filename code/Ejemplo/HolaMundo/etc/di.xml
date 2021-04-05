@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   <type name="Magento\Framework\Console\CommandList">
+       <arguments>
+           <argument name="commands" xsi:type="array">
+               <item name="ejemploAddItem" xsi:type="object">Ejemplo\HolaMundo\Console\Command\AddItem</item>
+           </argument>
+       </arguments>
+   </type>
+   <preference for="Ejemplo\HolaMundo\Api\Data\ItemInterface" type="Ejemplo\HolaMundo\Model\Item"></preference>
+   <preference for="Ejemplo\HolaMundo\Api\ItemRepositoryInterface" type="Ejemplo\HolaMundo\Model\ItemRepository"></preference>
+</config>

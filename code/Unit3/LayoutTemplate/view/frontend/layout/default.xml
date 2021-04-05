@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <!-- todoa lo que esta en default se muestra en la pagina total add hello work al footer -->
+    <body>
+        <referenceContainer name="footer">
+            <block name="footer-hello"
+                   template="Unit3_LayoutTemplate::hello-footer.phtml" />
+        </referenceContainer>
+    </body>
+</page>

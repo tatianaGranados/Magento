@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ejemplo\HolaMundo\Block\Hello" name="holamundo_index_index" template="Ejemplo_HolaMundo::index.phtml">
+                <arguments>
+                    <argument name="label" xsi:type="string">Productos:</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="top.search" remove="true"/>
+        <referenceBlock name="minicart" remove="true"/>
+    </body>
+</page>

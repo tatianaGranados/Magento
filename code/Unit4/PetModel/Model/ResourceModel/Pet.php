@@ -1,0 +1,21 @@
+<?php
+
+
+namespace Unit4\PetModel\Model\ResourceModel;
+
+
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+
+class Pet extends AbstractDb
+{
+
+    public function __construct( \Magento\Framework\Model\ResourceModel\Db\Context $context)
+    {
+        parent::__construct($context);
+    }
+
+    protected function _construct()
+    {
+        $this->_init('pet', 'pet_id');
+    }
+}

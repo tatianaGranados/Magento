@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="customer" frontName="customer">
+            <!-- <module name="Unit3_CustomerBonusesTab" before="Magento_Customer"/> sino carga aplicar el before con el nombre del modulo-->
+            <module name="Unit3_CustomerBonusesTab"/>
+            <!-- Agregar configuraicion para que leabefore="Magento_Customer" los ActionClass desde este modulo -->
+        </route>
+    </router>
+</config>
