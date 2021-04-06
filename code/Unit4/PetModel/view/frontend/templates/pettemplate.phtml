@@ -1,0 +1,9 @@
+<h1><?php echo __('list of pets') ?></h1>
+
+<?php
+/** @var \Unit4\PetModel\Block\Index $block */
+?>
+<?php foreach ($block->getItems() as $item): ?>
+    <h2><b><?php echo $item->getPetName(); ?></b></h2>
+    <p><?php echo $item->getPetType(); ?></p>
+<?php endforeach; ?>

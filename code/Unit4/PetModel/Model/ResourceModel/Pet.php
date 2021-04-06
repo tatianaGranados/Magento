@@ -9,13 +9,10 @@ use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 class Pet extends AbstractDb
 {
 
-    public function __construct( \Magento\Framework\Model\ResourceModel\Db\Context $context)
-    {
-        parent::__construct($context);
-    }
 
     protected function _construct()
     {
+        //enviamos el nombre de la tabla y el campo que es el id
         $this->_init('pet', 'pet_id');
     }
 }

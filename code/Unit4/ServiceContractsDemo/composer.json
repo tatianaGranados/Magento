@@ -1,0 +1,20 @@
+{
+  "name": "unit4/service-contracts-demo",
+  "version": "-",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Unit4\\ServiceContractsDemo\\": ""
+    }
+  }
+}

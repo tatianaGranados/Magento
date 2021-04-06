@@ -26,6 +26,11 @@
                     <argument name="myvmfaq" xsi:type="object">Tati\Faq\ViewModel\ViewModelFaq</argument>
                 </arguments>
             </block>
+
+            <block class="Tati\Faq\Block\ModuloFaq" name="faqfront_index_index" template="Tati_Faq::templatefaq.phtml" />
+
         </referenceContainer>
+
+
     </body>
 </page>

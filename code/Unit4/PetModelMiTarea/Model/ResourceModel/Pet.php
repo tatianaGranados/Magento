@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Unit4\PetModel\Model\ResourceModel;
+namespace Unit4\PetModelMiTarea\Model\ResourceModel;
 
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;

@@ -1,0 +1,10 @@
+<!-- <h1> <? //=$block->prueba() ?></h1> -->
+
+<?php
+/** @var \Tati\Faq\Block\ModuloFaq $block */
+?>
+<?php foreach ($block->getItems() as $item): ?>
+    <h2><b><?php echo $item->getQuestion(); ?></b></h2>
+    <p><?php echo $item->getAnswer(); ?></p>
+    <hr>
+<?php endforeach; ?>
